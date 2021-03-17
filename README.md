@@ -14,3 +14,7 @@
     $ sudo chmod +x simple_ascii_art.py
     $ python3.X simple_ascii_art.py
   ```
+<div>
+  <h1>Author</h1>
+  <p>Bearlim</p>
+</div>
