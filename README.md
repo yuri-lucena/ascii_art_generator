@@ -7,7 +7,6 @@
   <p>It's a just simple python script to make simple ASCII Arts
 </div>
 
-<div>
   <h1>Installation</h1>
   ```shell
   $ git clone https://github.com/bearlim/simple_ascii_generator.git
