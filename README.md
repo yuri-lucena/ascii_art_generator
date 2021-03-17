@@ -8,8 +8,9 @@
 </div>
 
   <h1>Installation</h1>
+  
   ```shell
-  $ git clone https://github.com/bearlim/simple_ascii_generator.git
-  $ sudo chmod +x simple_ascii_art.py
-  $ python3.X simple_ascii_art.py
+    $ git clone https://github.com/bearlim/simple_ascii_generator.git
+    $ sudo chmod +x simple_ascii_art.py
+    $ python3.X simple_ascii_art.py
   ```
