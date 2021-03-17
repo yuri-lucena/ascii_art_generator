@@ -5,5 +5,5 @@
 
 </h1>
 <p>
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Site-Python-blueviolet"></a>
+<a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Site-Python-blueviolet"></a>
 </p>
