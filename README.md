@@ -4,7 +4,7 @@
   <a href="https://pypi.org/project/art/"><img src="https://img.shields.io/badge/module-art-blue"></a>
 </div>
 <div>
-  <p>It's a just simple python script to make simple ASCII Arts
+  <p>It's a just simple python script to make ASCII Arts
 </div>
 
   <h1>Installation</h1>
