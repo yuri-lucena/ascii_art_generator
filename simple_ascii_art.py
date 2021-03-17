@@ -68,7 +68,10 @@ def random():
         elif platform.system() == 'Linux':
             os.system('clear')
         print("How many random ASCII art you want? Only numbers!\n")
-        answer = int(input())
+        try:
+            answer = int(input())
+        except ValueError:
+            return random()
         for i in range(0, answer + 1):
             a = art.randart()
             print(a)
@@ -84,7 +87,7 @@ def textArt():
             os.system('cls')
         elif platform.system() == 'Linux':
             os.system('clear')
-        print("Type the texto to converto to an ASCII Art:  ")
+        print("Type the text to converto to an ASCII Art:  ")
         text = input()
         print("1)Small font\n2)Medium font\n3)Large font\n4)Xlarge")       
         answer = input()
@@ -107,7 +110,10 @@ def textArt():
             answer1 = input()
         while answer1 == 'y':
             art.tprint(text, font=weight)
-            answer1 = input("Do you want to test an another font?[y/n]")
+            answer1 = input("Do you want to test an another font?[y/n]\n")
+            if answer1 not in ['y', 'n']:
+                print("Type a valid option")
+                return textArt()
         if answer1 == 'n':
             return start()
     except KeyboardInterrupt:
