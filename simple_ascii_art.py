@@ -6,7 +6,6 @@
 import os 
 import sys
 import platform
-import time
 try:
     import art
     import colorama
