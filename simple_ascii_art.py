@@ -10,7 +10,7 @@ import time
 try:
     import art
     import colorama
-    from colorama import Fore, Back, Style
+    from colorama import Fore
     colorama.init(autoreset=True)
 except ModuleNotFoundError:
     # Checking the python version
