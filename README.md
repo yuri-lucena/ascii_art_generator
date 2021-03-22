@@ -1,4 +1,4 @@
-<h1 align="left">Simple ASCII Generator</h1>
+<h1 align="left">Simple ASCII Art Generator</h1>
 <div>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-2.7%20%7C%203.x-sucess"></a>
   <a href="https://pypi.org/project/art/"><img src="https://img.shields.io/badge/module-art-blue"></a>
