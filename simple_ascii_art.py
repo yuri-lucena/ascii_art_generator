@@ -87,7 +87,7 @@ def textArt():
             os.system('cls')
         elif platform.system() == 'Linux':
             os.system('clear')
-        print("Type the text to converto to an ASCII Art:  ")
+        print("Type the text to convert to an ASCII Art:  ")
         text = input()
         print("1)Small font\n2)Medium font\n3)Large font\n4)Xlarge")       
         answer = input()
