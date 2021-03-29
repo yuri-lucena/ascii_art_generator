@@ -14,24 +14,31 @@ try:
 except ModuleNotFoundError:
     # Checking the python version
     v = sys.version_info
-    if platform.system() == "Windows":
-        os.system("py.exe -m pip install art")
-        os.system("py.exe -m pip install --upgrade art")
-        os.system("py.exe -m pip install colorama")
-        os.system("py.exe -m pip install --upgrade colorama")
-    elif platform.system() == "Linux":
-        os.system(f"python{v[0]}.{v[1]} -m pip install art")
-        os.system(f"python{v[0]}.{v[1]} -m pip install --upgrade art")
-        os.system(f"python{v[0]}.{v[1]} -m pip install colorama")
-        os.system(f"python{v[0]}.{v[1]} -m pip install --upgrade colorama")
+    answer = input("Do you want to install the colorama module and art module?[y/n] ")
+    while answer not in ['y', 'n']:
+        print("Type a valid option")
+        answer = input()
+    if answer == 'y':
+        if platform.system() == "Windows":
+            os.system("py.exe -m pip install art")
+            os.system("py.exe -m pip install --upgrade art")
+            os.system("py.exe -m pip install colorama")
+            os.system("py.exe -m pip install --upgrade colorama")
+        elif platform.system() == "Linux":
+            os.system(f"python{v[0]}.{v[1]} -m pip install art")
+            os.system(f"python{v[0]}.{v[1]} -m pip install --upgrade art")
+            os.system(f"python{v[0]}.{v[1]} -m pip install colorama")
+            os.system(f"python{v[0]}.{v[1]} -m pip install --upgrade colorama")
+    elif answer == 'n':
+        sys.exit("Exiting...\n")
 except KeyboardInterrupt:
     print("\nExiting...")
     sys.exit()
-    
+
 
 def start():
     try:
-        banner =             f'''
+        banner = f'''
 {Fore.RED}@@@@@@    @@@@@@    @@@@@@@  @@@  @@@  
 @@@@@@@@  @@@@@@@   @@@@@@@@  @@@  @@@  
 @@!  @@@  !@@       !@@       @@!  @@!  
@@ -87,7 +94,7 @@ def textArt():
             os.system('cls')
         elif platform.system() == 'Linux':
             os.system('clear')
-        print("Type the text to convert to an ASCII Art:  ")
+        print("Type the text to converto to an ASCII Art:  ")
         text = input()
         print("1)Small font\n2)Medium font\n3)Large font\n4)Xlarge")       
         answer = input()
